@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="game">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='./dist/all.css'>
+    <title>Document</title>
+</head>
+<body ng-controller="jobCtrl">
+    <nav class="nav1">
+        <!--<li><a href="#">Share</a></li>
+        <li><a href="#">Log in</a></li>-->
+    </nav>
+    <nav class="nav2">
+        <!--<li><a ui-sref="forhonor">For Honor</a></li>
+        <li><a ui-sref="overwatch">Overwatch</a></li>-->
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="ffjobs">Jobs</a></li>
+            
+    </nav>
+    <div class="view">
+    <ui-view></ui-view>
+    <button onClick="hideFeed()"  class="toggle">Toggle Feedback</button>
+
+<div id="hideFeed">
+        <div class="jobdesc">
+            <input type="text" placeholder="Job" ng-model="job.jobName">
+            <input type="text" placeholder="Description" ng-model="job.description">
+            <button ng-click="sendData(job)">Submit Description</button>        
+        </div>
+        <div class="feedback">
+            <input type="text" placeholder="Subject" ng-model="feedback.subject">
+            <input type="text" placeholder="Feedback" ng-model="feedback.message">
+            <button ng-click="sendFeedback(feedback)">Submit Feedback</button>
+        </div>
+    </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+    <script src="./dist/all.js"></script>
+    <script src="https://sdk.auth0.com/auth0.js#client=vgbD7JM3eD6qdkNxMkesdAIK0tsl-Onl"></script>
+
+</body>
+</html>

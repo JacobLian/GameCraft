@@ -1,0 +1,63 @@
+.nav1{
+    background-color: black;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    font-size: 15px;
+    width: 100%;
+    height: 20px;
+    z-index: 1;
+    position:fixed;
+    padding-right:25px;
+    padding-left:25px;
+    top:0px;
+}
+.nav2{
+    background-color: black;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    font-size: 25px;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+    position:fixed;
+    padding-right:25px;
+    padding-left:25px;
+    top: 20px;
+
+}
+.nav1 a{
+    text-decoration: none;
+    color:white;
+}
+.nav2 a{
+    text-decoration: none;
+    color:white;
+}
+.jobdesc{
+    // visibility: hidden;
+    position: fixed;
+    bottom: 22px;
+    right:0px;
+}
+.feedback{
+    // visibility: hidden;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+.toggle{
+    position: fixed;
+    bottom: 49px;
+    right:0px;
+}
+button{
+    background-color: darkslategray;
+    border-radius: 10px;
+    color:white;
+}

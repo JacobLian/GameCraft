@@ -1,0 +1,432 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.paladinback {
+  position: fixed;
+  background-image: url("../core/assets/back/paladinback.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.83;
+  z-index: -1; }
+
+.warriorback {
+  position: fixed;
+  background-image: url("../core/assets/back/warriorback.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.83;
+  z-index: -1; }
+
+.darkknightback {
+  position: fixed;
+  background-image: url("../core/assets/back/darkknightback.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.83;
+  z-index: -1; }
+
+.monkback {
+  position: fixed;
+  background-image: url("../core/assets/back/monkback.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.83;
+  z-index: -1; }
+
+.dragoonback {
+  position: fixed;
+  background-image: url("../core/assets/back/dragoonback.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.83;
+  z-index: -1; }
+
+.ninjaback {
+  position: fixed;
+  background-image: url("../core/assets/back/ninjaback.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.83;
+  z-index: -1; }
+
+.samuraiback {
+  position: fixed;
+  background-image: url("../core/assets/back/samuraiback.png-small");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.83;
+  z-index: -1; }
+
+.bardback {
+  position: fixed;
+  background-image: url("../core/assets/back/bardback.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.83;
+  z-index: -1; }
+
+.machinistback {
+  position: fixed;
+  background-image: url("../core/assets/back/machinistback.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.83;
+  z-index: -1; }
+
+.blackmageback {
+  position: fixed;
+  background-image: url("../core/assets/back/blackmageback.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.83;
+  z-index: -1; }
+
+.summonerback {
+  position: fixed;
+  background-image: url("../core/assets/back/summonerback.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.83;
+  z-index: -1; }
+
+.redmageback {
+  position: fixed;
+  background-image: url("../core/assets/back/redmageback.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.83;
+  z-index: -1; }
+
+.whitemageback {
+  position: fixed;
+  background-image: url("../core/assets/back/whitemageback.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.83;
+  z-index: -1; }
+
+.scholarback {
+  position: fixed;
+  background-image: url("../core/assets/back/scholarback.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.83;
+  z-index: -1; }
+
+.astrologianback {
+  position: fixed;
+  background-image: url("../core/assets/back/astrologianback.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.83;
+  z-index: -1; }
+
+.jobsback {
+  position: fixed;
+  background-image: url("../core/assets/back/ffjobs.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.63;
+  z-index: -1; }
+
+.joblist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 40px; }
+
+strong {
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+li {
+  list-style-type: none; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+img {
+  height: 160px;
+  width: 150px; }
+
+.list {
+  text-align: center;
+  font-weight: bold; }
+
+.return {
+  position: absolute;
+  top: 70px;
+  right: 35px; }
+
+.jobname {
+  font-size: 60px;
+  margin-top: 70px;
+  margin-left: 90px;
+  border-bottom: 1px solid black;
+  width: 80vw; }
+
+.header {
+  font-size: 35px;
+  border-bottom: 1px solid black;
+  width: 80vw; }
+
+.lore {
+  margin-top: 40px;
+  margin-left: 90px; }
+
+#gauge {
+  position: relative;
+  right: -70vw;
+  width: 250px;
+  height: 150px; }
+
+#gauge2 {
+  position: relative;
+  top: 150px;
+  right: -70vw;
+  width: 250px;
+  height: 150px; }
+
+.homeback {
+  background-image: url("../core/assets/back/ffback.jpg");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  height: 110vh;
+  width: 100vw;
+  top: -50px;
+  z-index: -1; }
+
+.welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 200px;
+  width: 150px; }
+
+.view {
+  padding-top: 50px; }
+
+.nav1 {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  font-size: 15px;
+  width: 100%;
+  height: 20px;
+  z-index: 1;
+  position: fixed;
+  padding-right: 25px;
+  padding-left: 25px;
+  top: 0px; }
+
+.nav2 {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  font-size: 25px;
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+  position: fixed;
+  padding-right: 25px;
+  padding-left: 25px;
+  top: 20px; }
+
+.nav1 a {
+  text-decoration: none;
+  color: white; }
+
+.nav2 a {
+  text-decoration: none;
+  color: white; }
+
+.jobdesc {
+  position: fixed;
+  bottom: 22px;
+  right: 0px; }
+
+.feedback {
+  position: fixed;
+  bottom: 0px;
+  right: 0px; }
+
+.toggle {
+  position: fixed;
+  bottom: 49px;
+  right: 0px; }
+
+button {
+  background-color: darkslategray;
+  border-radius: 10px;
+  color: white; }

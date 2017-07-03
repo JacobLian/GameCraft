@@ -1,0 +1,25 @@
+.homeback{
+    background-image: url("../core/assets/back/ffback.jpg");
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    height: 110vh;
+    width: 100vw;
+    top:-50px;
+    z-index: -1;
+   
+}
+.welcome{
+    display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+    position: absolute;
+    margin-top:100px;
+    margin-left: 200px;
+    width: 150px;
+}
+.view{
+    padding-top:50px;
+}

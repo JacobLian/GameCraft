@@ -48,16 +48,15 @@
 .feedback{
     // visibility: hidden;
     position: fixed;
-    bottom: 0px;
+    bottom: 44px;
     right: 0px;
 }
 .toggle{
     position: fixed;
-    bottom: 49px;
+    bottom: 0px;
     right:0px;
 }
 button{
-    background-color: darkslategray;
+    // color:$btn-color;
     border-radius: 10px;
-    color:white;
 }

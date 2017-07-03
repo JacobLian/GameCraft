@@ -6,8 +6,7 @@ angular.module("game", ['ui.router'])
     $stateProvider
     .state('home', {
         url: '/',
-        templateUrl: './core/views/home-view.html',
-
+        templateUrl: './core/views/home-view.html'
     })
     .state('ffjobs', {
         url: '/ffjobs',

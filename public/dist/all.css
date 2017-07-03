@@ -83,6 +83,7 @@ input, select {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+
 .paladinback {
   position: fixed;
   background-image: url("../core/assets/back/paladinback.jpg");
@@ -90,7 +91,7 @@ input, select {
   height: 100vh;
   width: 100vw;
   top: 50px;
-  opacity: 0.83;
+  opacity: 0.68;
   z-index: -1; }
 
 .warriorback {
@@ -294,31 +295,31 @@ img {
 .jobname {
   font-size: 60px;
   margin-top: 70px;
-  margin-left: 90px;
+  margin-left: 5vw;
   border-bottom: 1px solid black;
-  width: 80vw; }
+  width: 80vw;
+  max-width: 1200px; }
 
 .header {
   font-size: 35px;
   border-bottom: 1px solid black;
-  width: 80vw; }
+  width: 80vw;
+  max-width: 1200px; }
 
 .lore {
+  font-size: 20px;
   margin-top: 40px;
-  margin-left: 90px; }
+  margin-left: 5vw;
+  margin-right: 15vw;
+  max-width: 1050px; }
 
 #gauge {
-  position: relative;
-  right: -70vw;
-  width: 250px;
-  height: 150px; }
+  width: 210px;
+  height: 120px; }
 
 #gauge2 {
-  position: relative;
-  top: 150px;
-  right: -70vw;
-  width: 250px;
-  height: 150px; }
+  width: 210px;
+  height: 120px; }
 
 .homeback {
   background-image: url("../core/assets/back/ffback.jpg");
@@ -348,8 +349,8 @@ img {
   align-items: baseline;
   position: absolute;
   margin-top: 100px;
-  margin-left: 200px;
-  width: 150px; }
+  margin-left: 150px;
+  width: 23vw; }
 
 .view {
   padding-top: 50px; }
@@ -418,15 +419,13 @@ img {
 
 .feedback {
   position: fixed;
-  bottom: 0px;
+  bottom: 44px;
   right: 0px; }
 
 .toggle {
   position: fixed;
-  bottom: 49px;
+  bottom: 0px;
   right: 0px; }
 
 button {
-  background-color: darkslategray;
-  border-radius: 10px;
-  color: white; }
+  border-radius: 10px; }

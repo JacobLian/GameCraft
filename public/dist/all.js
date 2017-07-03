@@ -6,7 +6,6 @@ angular.module("game", ['ui.router']).config(function ($stateProvider, $urlRoute
     $stateProvider.state('home', {
         url: '/',
         templateUrl: './core/views/home-view.html'
-
     }).state('ffjobs', {
         url: '/ffjobs',
         templateUrl: './core/views/ffjobs.html'
@@ -72,27 +71,16 @@ function hideFeed() {
 
 angular.module("game").controller('jobCtrl', function ($scope, jobSvc) {
 
-    // $scope.getJobs = function(){
-    //     jobSvc.getJobs().then(function(response){
-    //     //  console.log(response);
-    //      $scope.jobs = response.data;
-    //     })
-    // }
-    // $scope.getJobs();
-
-    // $scope.getActions = function(){
-    //     jobSvc.getActions().then(function(response){
-    //         console.log(response);
-    // $scope.actions = response.data
-    //     })
-    // }
-    // $scope.getActions();
-
     $scope.sendData = function (jobs) {
-        jobSvc.postJobs(jobs).then(function (res) {
-            // $scope.response = response.push("Thank you for your input!");
-            console.log(res);
+        console.log(jobs);
+        jobSvc.postJobs(jobs).then(function (response) {
+            console.log(response);
         });
+        // jobSvc.postJobs(jobs).then(function(res) {
+        //     // $scope.response = response.push("Thank you for your input!");
+        //     console.log(res)
+
+        // })
     };
 
     $scope.sendFeedback = function (feedback) {
@@ -100,7 +88,24 @@ angular.module("game").controller('jobCtrl', function ($scope, jobSvc) {
             console.log(res);
         });
     };
+
+    $scope.getActions = function () {
+        jobSvc.getActions().then(function (response) {
+            console.log(response);
+            $scope.actions = response;
+        });
+    };
+    $scope.getActions();
 });
+
+// $scope.getJobs = function(){
+//     jobSvc.getJobs().then(function(response){
+//     //  console.log(response);
+//      $scope.jobs = response.data;
+//     })
+// }
+// $scope.getJobs();
+
 
 // $scope.jobName = "";
 // $scope.addDesc = function( event ){
@@ -137,14 +142,20 @@ angular.module("game").service('jobSvc', function ($http) {
         return $http.get('https://api.xivdb.com/data/classjobs');
     };
     this.getActions = function () {
-        return $http.get('https://api.xivdb.com/action');
+        return $http.get('https://api.xivdb.com/action?columns=name,help');
     };
 
     this.postJobs = function (job) {
-        $http({
+        return $http({
             url: 'http://localhost:3000/jobdescrip',
             method: 'POST',
             data: job
+        }).then(function (response) {
+            console.log('service: ', response);
+            return response;
+        }).catch(function (err) {
+            console.log("service err: ", err);
+            return err;
         });
     };
 

@@ -6,14 +6,20 @@ angular.module("game").service('jobSvc', function($http){
         return $http.get('https://api.xivdb.com/data/classjobs')
     }
     this.getActions = function(){
-        return $http.get('https://api.xivdb.com/action')
+        return $http.get('https://api.xivdb.com/action?columns=name,help')
     }
 
     this.postJobs = function(job){
-        $http({
+      return $http({
             url: 'http://localhost:3000/jobdescrip',
             method: 'POST',
             data: job
+        }).then(function(response) {
+            console.log('service: ', response)
+            return response
+        }).catch(function(err){
+            console.log("service err: ", err)
+            return err
         })
     }
    

@@ -20,15 +20,15 @@ $scope.sendFeedback = function(feedback){
 
 
 
-$scope.getActions = function(){
-    jobSvc.getActions().then(function(response){
-        console.log(response);
-        $scope.actions = response
-    })
-}
-$scope.getActions();
+// $scope.getActions = function(){
+//     jobSvc.getActions().then(function(response){
+//         console.log(response);
+//         $scope.actions = response
+//     })
+// }
+// $scope.getActions();
 
-})
+
 
 // $scope.getJobs = function(){
 //     jobSvc.getJobs().then(function(response){
@@ -38,7 +38,7 @@ $scope.getActions();
 // }
 // $scope.getJobs();
 
-
+// })
 
 
 

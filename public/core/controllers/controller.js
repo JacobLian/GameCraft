@@ -18,7 +18,7 @@ $scope.sendFeedback = function(feedback){
     })
 }
 
-
+})
 
 // $scope.getActions = function(){
 //     jobSvc.getActions().then(function(response){

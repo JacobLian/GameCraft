@@ -84,6 +84,16 @@ input, select {
   box-sizing: border-box; }
 
 
+.statback {
+  position: fixed;
+  background-image: url("../core/assets/back/statpage.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 50px;
+  opacity: 0.83;
+  z-index: -1; }
+
 .paladinback {
   position: fixed;
   background-image: url("../core/assets/back/paladinback.jpg");
@@ -290,11 +300,11 @@ img {
 .return {
   position: absolute;
   top: 70px;
-  right: 35px; }
+  right: 15vw; }
 
 .jobname {
   font-size: 60px;
-  margin-top: 70px;
+  margin-top: 30px;
   margin-left: 5vw;
   border-bottom: 1px solid black;
   width: 80vw;
@@ -321,6 +331,28 @@ img {
 #gauge2 {
   width: 210px;
   height: 120px; }
+
+.statname {
+  margin-top: 20px;
+  font-size: 23px; }
+
+.statdef {
+  font-size: 21px;
+  font-weight: 500; }
+
+.stathead {
+  font-size: 50px;
+  margin-top: 30px;
+  margin-left: 5vw;
+  width: 80vw;
+  max-width: 1200px; }
+
+.tanks {
+  width: 290px;
+  height: 190px;
+  border: 2px solid black;
+  background-color: lightblue;
+  border-radius: 10px; }
 
 .homeback {
   background-image: url("../core/assets/back/ffback.jpg");
@@ -430,3 +462,15 @@ img {
 
 button {
   border-radius: 10px; }
+
+.background {
+  position: fixed;
+  background-color: lightgray;
+  background-size: cover;
+  height: 95vh;
+  width: 83vw;
+  bottom: 0px;
+  left: 4vw;
+  opacity: 0.28;
+  z-index: -1;
+  border: 2px solid red; }

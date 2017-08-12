@@ -60,3 +60,15 @@ button{
     // color:$btn-color;
     border-radius: 10px;
 }
+.background{
+    position: fixed;
+    background-color: lightgray;
+    background-size: cover;
+    height: 95vh;
+    width: 83vw;
+    bottom:0px;
+    left:4vw;
+    opacity:0.28;
+    z-index: -1;
+    border:2px solid red;
+}

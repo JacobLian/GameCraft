@@ -133,13 +133,6 @@ angular.module("game").controller('jobCtrl', function ($scope, jobSvc) {
 
 // }
 "use strict";
-"use strict";
-// window.ready()
-//     var btn = document.querySelector('.button');
-//     btn.on('click', function(e){
-//         e.preventDefault();
-//     });
-"use strict";
 'use strict';
 
 angular.module("game").service('jobSvc', function ($http) {
@@ -173,3 +166,10 @@ angular.module("game").service('jobSvc', function ($http) {
         });
     };
 });
+"use strict";
+// window.ready()
+//     var btn = document.querySelector('.button');
+//     btn.on('click', function(e){
+//         e.preventDefault();
+//     });
+"use strict";

@@ -349,6 +349,34 @@ img {
 
 .tanks {
   width: 290px;
+  height: 10px;
+  border: 2px solid black;
+  background-color: #E6CDAD;
+  border-radius: 10px; }
+
+.meleedps {
+  width: 290px;
+  height: 190px;
+  border: 2px solid black;
+  background-color: lightblue;
+  border-radius: 10px; }
+
+.rangeddps {
+  width: 290px;
+  height: 190px;
+  border: 2px solid black;
+  background-color: lightblue;
+  border-radius: 10px; }
+
+.casterdps {
+  width: 290px;
+  height: 190px;
+  border: 2px solid black;
+  background-color: lightblue;
+  border-radius: 10px; }
+
+.healer {
+  width: 290px;
   height: 190px;
   border: 2px solid black;
   background-color: lightblue;

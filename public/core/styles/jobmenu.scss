@@ -1,0 +1,128 @@
+.jobheader{
+    position: absolute;
+    background-color: lightgray;
+    width:100%;
+    height: 110px;
+    top:60px;
+    opacity: 0.28;
+    z-index: -1;
+    border:2px solid blue;
+}
+.jobintro{
+    font-size:25px;
+    font-weight:bold;
+    position: absolute;
+    width:100vw;
+    top:70px;
+    text-align: center;
+    padding-left:1%;
+}
+.jobdesc{
+    position: relative;
+    width:350px;
+    top:100px;
+    left:39%;
+    text-align: center;
+    font-size: 15px;
+    font-weight:normal;
+}
+.tanks{
+    position:absolute; 
+    width:230px;
+    top:200px;
+    left:23%;
+    height:150px;
+    border: 2px solid rgba(0, 0, 0, 0.50);
+    background-color: rgba(47,61,123,0.5);
+    border-radius: 10px;
+}
+.tanktext{
+    position: absolute;
+    left:23%;
+    width:230px;
+    top:180px;
+    text-align: center;
+}
+.tanks li{
+    padding-top:20px;
+}
+.meleedps{
+    position:absolute;
+    left:60%;
+    top:200px;
+    width:230px;
+    height:150px;
+    border: 2px solid rgba(0, 0, 0, 0.50);
+    background-color: rgba(163,51,51,0.5);
+    border-radius: 10px;
+}
+.meleetext{
+    position: absolute;
+    left:60%;
+    width:230px;
+    top:180px;
+    text-align: center;
+}
+.meleedps li{
+    padding-top:15px;
+}
+.rangeddps{
+    position:absolute;
+    left:12%;
+    top:420px;
+    width:230px;
+    height:150px;
+    border: 2px solid rgba(0, 0, 0, 0.50);
+    background-color: rgba(163,51,51,0.5);
+    border-radius: 10px;
+}
+.rangedtext{
+    position: absolute;
+    left:12%;
+    width:230px;
+    top:400px;
+    text-align: center;
+}
+.rangeddps li{
+    padding-top:30px;
+}
+.casterdps{
+    position:absolute;
+    left:42%;
+    top:420px;
+    width:230px;
+    height:150px;
+    border: 2px solid rgba(0, 0, 0, 0.50);
+    background-color: rgba(163,51,51,0.5);
+    border-radius: 10px;
+}
+.castertext{
+    position: absolute;
+    left:42%;
+    width:230px;
+    top:400px;
+    text-align: center;
+}
+.casterdps li{
+    padding-top:20px;
+}
+.healer{
+    position:absolute;
+    left:72%;
+    top:420px;
+    width:230px;
+    height:150px;
+    border: 2px solid rgba(0, 0, 0, 0.50);
+    background-color: rgba(42,148,48,0.5);
+    border-radius: 10px;
+}
+.healertext{
+    position: absolute;
+    left:72%;
+    width:230px;
+    top:400px;
+    text-align: center;
+}
+.healer li{
+    padding-top:20px;
+}

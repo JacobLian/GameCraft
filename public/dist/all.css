@@ -309,11 +309,11 @@ input, select {
 
 .jobdesc {
   position: relative;
-  width: 350px;
+  width: 450px;
   top: 100px;
-  left: 39%;
+  left: 35%;
   text-align: center;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: normal; }
 
 .tanks {
@@ -330,11 +330,15 @@ input, select {
   position: absolute;
   left: 23%;
   width: 230px;
-  top: 180px;
-  text-align: center; }
+  top: 170px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold; }
 
 .tanks li {
-  padding-top: 20px; }
+  padding-top: 20px;
+  font-size: 20px;
+  padding-left: 7px; }
 
 .meleedps {
   position: absolute;
@@ -342,19 +346,23 @@ input, select {
   top: 200px;
   width: 230px;
   height: 150px;
-  border: 2px solid rgba(0, 0, 0, 0.5);
-  background-color: rgba(163, 51, 51, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  background-color: rgba(163, 51, 51, 0.7);
   border-radius: 10px; }
 
 .meleetext {
   position: absolute;
   left: 60%;
   width: 230px;
-  top: 180px;
-  text-align: center; }
+  top: 170px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold; }
 
 .meleedps li {
-  padding-top: 15px; }
+  padding-top: 13px;
+  font-size: 20px;
+  padding-left: 7px; }
 
 .rangeddps {
   position: absolute;
@@ -362,19 +370,23 @@ input, select {
   top: 420px;
   width: 230px;
   height: 150px;
-  border: 2px solid rgba(0, 0, 0, 0.5);
-  background-color: rgba(163, 51, 51, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  background-color: rgba(163, 51, 51, 0.7);
   border-radius: 10px; }
 
 .rangedtext {
   position: absolute;
-  left: 12%;
-  width: 230px;
-  top: 400px;
-  text-align: center; }
+  left: 11.3%;
+  width: 250px;
+  top: 390px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold; }
 
 .rangeddps li {
-  padding-top: 30px; }
+  padding-top: 30px;
+  font-size: 20px;
+  padding-left: 7px; }
 
 .casterdps {
   position: absolute;
@@ -382,19 +394,23 @@ input, select {
   top: 420px;
   width: 230px;
   height: 150px;
-  border: 2px solid rgba(0, 0, 0, 0.5);
-  background-color: rgba(163, 51, 51, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  background-color: rgba(163, 51, 51, 0.7);
   border-radius: 10px; }
 
 .castertext {
   position: absolute;
   left: 42%;
   width: 230px;
-  top: 400px;
-  text-align: center; }
+  top: 390px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold; }
 
 .casterdps li {
-  padding-top: 20px; }
+  padding-top: 20px;
+  font-size: 20px;
+  padding-left: 7px; }
 
 .healer {
   position: absolute;
@@ -402,29 +418,23 @@ input, select {
   top: 420px;
   width: 230px;
   height: 150px;
-  border: 2px solid rgba(0, 0, 0, 0.5);
-  background-color: rgba(42, 148, 48, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  background-color: rgba(42, 148, 48, 0.7);
   border-radius: 10px; }
 
 .healertext {
   position: absolute;
   left: 72%;
   width: 230px;
-  top: 400px;
-  text-align: center; }
+  top: 390px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold; }
 
 .healer li {
-  padding-top: 20px; }
-
-.jobsback {
-  position: fixed;
-  background-image: url("../core/assets/back/ffjobs.jpg");
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  top: 50px;
-  opacity: 0.63;
-  z-index: -1; }
+  padding-top: 20px;
+  font-size: 20px;
+  padding-left: 7px; }
 
 .joblist {
   display: -webkit-box;
@@ -506,6 +516,7 @@ img {
 
 .statname {
   margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 23px; }
 
 .statdef {

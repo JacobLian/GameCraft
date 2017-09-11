@@ -80,11 +80,11 @@
 }
 .samuraiback{
     position: fixed;
-    background-image: url("../core/assets/back/sam.jpg");
+    background-image: url("../core/assets/back/sam3.jpg");
     background-size: cover;
-    height: 100vh;
+    height: 107vh;
     width: 100vw;
-    top:0px;
+    top:-40px;
     opacity:0.83;
     z-index: -1;
 }
@@ -130,11 +130,11 @@
 }
 .redmageback{
     position: fixed;
-    background-image: url("../core/assets/back/rdm.jpg");
+    background-image: url("../core/assets/back/rdm2.jpg");
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    top:50px;
+    top:0px;
     opacity:0.83;
     z-index: -1;
 }

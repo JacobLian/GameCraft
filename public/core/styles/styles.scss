@@ -1,5 +1,5 @@
 .nav1{
-    background-color: black;
+    background-color: rgb(20,20,20);
     display:flex;
     justify-content: space-between;
     flex-direction: row;
@@ -15,7 +15,7 @@
     top:0px;
 }
 .nav2{
-    background-color: black;
+    background-color: rgb(20,20,20);
     display:flex;
     justify-content: space-around;
     flex-direction: row;
@@ -62,9 +62,9 @@ button{
     position: fixed;
     background-color: lightgray;
     background-size: cover;
-    height: 95vh;
+    height: 105vh;
     width: 83vw;
-    bottom:0px;
+    bottom:-5px;
     left:4vw;
     opacity:0.33;
     z-index: -1;

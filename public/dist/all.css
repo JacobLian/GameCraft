@@ -136,7 +136,7 @@ input, select {
 
 .monkback {
   position: fixed;
-  background-image: url("../core/assets/back/monkback.jpg");
+  background-image: url("../core/assets/back/mnk.png");
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -156,9 +156,9 @@ input, select {
 
 .ninjaback {
   position: fixed;
-  background-image: url("../core/assets/back/ninjaback.jpg");
+  background-image: url("../core/assets/back/nin.png");
   background-size: cover;
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
   top: 50px;
   opacity: 0.83;
@@ -166,11 +166,11 @@ input, select {
 
 .samuraiback {
   position: fixed;
-  background-image: url("../core/assets/back/samuraiback.png-small");
+  background-image: url("../core/assets/back/sam.jpg");
   background-size: cover;
   height: 100vh;
   width: 100vw;
-  top: 50px;
+  top: 0px;
   opacity: 0.83;
   z-index: -1; }
 
@@ -180,13 +180,13 @@ input, select {
   background-size: cover;
   height: 100vh;
   width: 100vw;
-  top: 50px;
+  top: 0px;
   opacity: 0.83;
   z-index: -1; }
 
 .machinistback {
   position: fixed;
-  background-image: url("../core/assets/back/machinistback.png");
+  background-image: url("../core/assets/back/mch.jpg");
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -216,7 +216,7 @@ input, select {
 
 .redmageback {
   position: fixed;
-  background-image: url("../core/assets/back/redmageback.jpg");
+  background-image: url("../core/assets/back/rdm.jpg");
   background-size: cover;
   height: 100vh;
   width: 100vw;

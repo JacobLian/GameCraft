@@ -12,57 +12,57 @@ app.use(cors())
 app.use(bodyParser.json())
 
 
-massive({
-  host: config.host,
-  port: config.port,
-  database: config.database,
-  user: config.user,
-  password: config.password
-}).then(function(db){
-  app.set('db', db);
-});
+// massive({
+//   host: config.host,
+//   port: config.port,
+//   database: config.database,
+//   user: config.user,
+//   password: config.password
+// }).then(function(db){
+//   app.set('db', db);
+// });
 
-app.get('/jobs', function(req, res){
-    req.app.get('db').getJobs().then(function(jobs){
-        res.send(jobs);
-    });
-});
+// app.get('/jobs', function(req, res){
+//     req.app.get('db').getJobs().then(function(jobs){
+//         res.send(jobs);
+//     });
+// });
 
-app.get('/jobdescrip', function(req, res){
-    req.app.get('db').getJobDesc().then(function(jobDescription){
-        res.send(jobDescription);
-    });
-});
+// app.get('/jobdescrip', function(req, res){
+//     req.app.get('db').getJobDesc().then(function(jobDescription){
+//         res.send(jobDescription);
+//     });
+// });
 
-app.post('/jobdescrip', function(req, res){
-    console.log(req.body)
-    var jobdescrip = [
-        req.body.jobName,
-        req.body.description
-    ]
-    req.app.get('db').createJobDesc(jobdescrip).then(function(resp){
-        console.log('sent job description to postgres', resp)
-    res.status(200).send(resp);
-  })
-})
+// app.post('/jobdescrip', function(req, res){
+//     console.log(req.body)
+//     var jobdescrip = [
+//         req.body.jobName,
+//         req.body.description
+//     ]
+//     req.app.get('db').createJobDesc(jobdescrip).then(function(resp){
+//         console.log('sent job description to postgres', resp)
+//     res.status(200).send(resp);
+//   })
+// })
 
-app.get('/feedback', function(req, res){
-    req.app.get('db').getFeedback().then(function(feedback){
-        res.send(feedback);
-    })
-})
+// app.get('/feedback', function(req, res){
+//     req.app.get('db').getFeedback().then(function(feedback){
+//         res.send(feedback);
+//     })
+// })
 
-app.post('/feedback', function(req, res){
-    console.log(req.body)
-    var feedback = [
-        req.body.subject,
-        req.body.message
-    ]
-    req.app.get('db').createFeedback(feedback).then(function(resp){
-        console.log('sent feedback to postgres', resp)
-    res.status(200).send(resp);
-  })
-})
+// app.post('/feedback', function(req, res){
+//     console.log(req.body)
+//     var feedback = [
+//         req.body.subject,
+//         req.body.message
+//     ]
+//     req.app.get('db').createFeedback(feedback).then(function(resp){
+//         console.log('sent feedback to postgres', resp)
+//     res.status(200).send(resp);
+//   })
+// })
 
 app.listen(port, function(){
     console.log("listening on 3000")

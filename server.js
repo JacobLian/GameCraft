@@ -6,10 +6,33 @@ const session = require('express-session')
 const config = require('./config.js')
 const passport = require('passport')
 const Auth0Strategy = require('passport-auth0')
+const LocalStrategy = require('passport-local')
 var port = 3000;
 const app = express();
 app.use(cors())
 app.use(bodyParser.json())
+
+passport.use(new LocalStrategy(
+    function(username, password, done) {
+      User.findOne({ username: username }, function (err, user) {
+        if (err) { return done(err); }
+        if (!user) {
+          return done(null, false, { message: 'Incorrect username.' });
+        }
+        if (!user.validPassword(password)) {
+          return done(null, false, { message: 'Incorrect password.' });
+        }
+        return done(null, user);
+      });
+    }
+  ));
+
+
+
+
+app.listen(port, function(){
+    console.log("listening on 3000")
+})
 
 
 // massive({
@@ -64,9 +87,6 @@ app.use(bodyParser.json())
 //   })
 // })
 
-app.listen(port, function(){
-    console.log("listening on 3000")
-})
 
 // app.get('/auth', passport.authenticate('auth0'));
 // app.use(express.static(`${__dirname}/public`))

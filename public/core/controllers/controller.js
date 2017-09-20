@@ -18,27 +18,25 @@ $scope.sendFeedback = function(feedback){
     })
 }
 
+
+$scope.getActions = function(){
+    jobSvc.getActions().then(function(response){
+        console.log(response);
+        $scope.actions = response
+    })
+}
+$scope.getActions();
+
+
+$scope.getJobs = function(){
+    jobSvc.getJobs().then(function(response){
+     console.log(response);
+     $scope.jobs = response.data;
+    })
+}
+$scope.getJobs();
+
 })
-
-// $scope.getActions = function(){
-//     jobSvc.getActions().then(function(response){
-//         console.log(response);
-//         $scope.actions = response
-//     })
-// }
-// $scope.getActions();
-
-
-
-// $scope.getJobs = function(){
-//     jobSvc.getJobs().then(function(response){
-//     //  console.log(response);
-//      $scope.jobs = response.data;
-//     })
-// }
-// $scope.getJobs();
-
-// })
 
 
 

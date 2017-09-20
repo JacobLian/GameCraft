@@ -71,13 +71,6 @@ function hideFeed() {
     }
 }
 "use strict";
-// window.ready()
-//     var btn = document.querySelector('.button');
-//     btn.on('click', function(e){
-//         e.preventDefault();
-//     });
-"use strict";
-"use strict";
 
 angular.module("game").controller('jobCtrl', function ($scope, jobSvc) {
 
@@ -98,27 +91,23 @@ angular.module("game").controller('jobCtrl', function ($scope, jobSvc) {
             console.log(res);
         });
     };
+
+    $scope.getActions = function () {
+        jobSvc.getActions().then(function (response) {
+            console.log(response);
+            $scope.actions = response;
+        });
+    };
+    $scope.getActions();
+
+    $scope.getJobs = function () {
+        jobSvc.getJobs().then(function (response) {
+            console.log(response);
+            $scope.jobs = response.data;
+        });
+    };
+    $scope.getJobs();
 });
-
-// $scope.getActions = function(){
-//     jobSvc.getActions().then(function(response){
-//         console.log(response);
-//         $scope.actions = response
-//     })
-// }
-// $scope.getActions();
-
-
-// $scope.getJobs = function(){
-//     jobSvc.getJobs().then(function(response){
-//     //  console.log(response);
-//      $scope.jobs = response.data;
-//     })
-// }
-// $scope.getJobs();
-
-// })
-
 
 // $scope.jobName = "";
 // $scope.addDesc = function( event ){
@@ -140,12 +129,19 @@ angular.module("game").controller('jobCtrl', function ($scope, jobSvc) {
 
 // }
 "use strict";
+"use strict";
+// window.ready()
+//     var btn = document.querySelector('.button');
+//     btn.on('click', function(e){
+//         e.preventDefault();
+//     });
+"use strict";
 'use strict';
 
 angular.module("game").service('jobSvc', function ($http) {
 
     this.getJobs = function () {
-        return $http.get('https://api.xivdb.com/data/classjobs');
+        return $http.get('http://garlandtools.org/db/');
     };
     this.getActions = function () {
         return $http.get('https://api.xivdb.com/action');

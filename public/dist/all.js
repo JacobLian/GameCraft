@@ -95,7 +95,7 @@ angular.module("game").controller('jobCtrl', function ($scope, jobSvc) {
     $scope.getActions = function () {
         jobSvc.getActions().then(function (response) {
             console.log(response);
-            $scope.actions = response;
+            $scope.actions = response.data;
         });
     };
     $scope.getActions();
@@ -129,19 +129,12 @@ angular.module("game").controller('jobCtrl', function ($scope, jobSvc) {
 
 // }
 "use strict";
-"use strict";
-// window.ready()
-//     var btn = document.querySelector('.button');
-//     btn.on('click', function(e){
-//         e.preventDefault();
-//     });
-"use strict";
 'use strict';
 
 angular.module("game").service('jobSvc', function ($http) {
 
     this.getJobs = function () {
-        return $http.get('http://garlandtools.org/db/');
+        return $http.get(' http://www.garlandtools.org/db/data/action/97.json');
     };
     this.getActions = function () {
         return $http.get('https://api.xivdb.com/action');
@@ -169,3 +162,10 @@ angular.module("game").service('jobSvc', function ($http) {
         });
     };
 });
+"use strict";
+// window.ready()
+//     var btn = document.querySelector('.button');
+//     btn.on('click', function(e){
+//         e.preventDefault();
+//     });
+"use strict";

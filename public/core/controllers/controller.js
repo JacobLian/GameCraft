@@ -22,7 +22,7 @@ $scope.sendFeedback = function(feedback){
 $scope.getActions = function(){
     jobSvc.getActions().then(function(response){
         console.log(response);
-        $scope.actions = response
+        $scope.actions = response.data
     })
 }
 $scope.getActions();

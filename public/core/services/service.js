@@ -3,7 +3,7 @@ angular.module("game").service('jobSvc', function($http){
 
     
      this.getJobs = function(){
-        return $http.get('http://garlandtools.org/db/')
+        return $http.get(' http://www.garlandtools.org/db/data/action/97.json')
     }
     this.getActions = function(){
         return $http.get('https://api.xivdb.com/action')

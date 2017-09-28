@@ -310,45 +310,54 @@ input, select {
   position: absolute;
   width: 100vw;
   top: 70px;
-  text-align: center;
-  padding-left: 1%; }
+  text-align: center; }
 
 .jobdesc {
-  position: relative;
-  width: 525px;
-  top: 100px;
-  left: 32%;
+  margin: 0 auto;
+  padding-top: 43px;
   text-align: center;
-  font-size: 20px;
-  font-weight: normal; }
+  width: 525px;
+  font-size: 20px; }
 
 .jobicon {
-  width: 30px;
-  height: 30px; }
+  width: 35px;
+  height: 35px; }
+
+.minidesc {
+  font-size: 18px;
+  padding-left: 20px;
+  width: 290px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.lengthen {
+  position: absolute;
+  top: 880px;
+  visibility: hidden; }
 
 .tanks {
   position: absolute;
-  width: 230px;
-  top: 200px;
-  left: 23%;
-  height: 170px;
+  width: 310px;
+  top: 210px;
+  left: 18%;
+  height: 270px;
   border: 2px solid rgba(0, 0, 0, 0.5);
-  background-color: rgba(47, 61, 123, 0.5);
+  background-color: rgba(47, 61, 123, 0.6);
   border-radius: 10px; }
 
 .tanktext {
   position: absolute;
-  left: 23%;
+  left: 21%;
   width: 230px;
-  top: 170px;
+  top: 180px;
   text-align: center;
   font-size: 23px;
   font-weight: bold; }
 
 .tanks li {
-  padding-top: 20px;
-  font-size: 20px;
-  padding-left: 7px; }
+  padding-top: 15px;
+  padding-left: 7px;
+  font-size: 21px; }
 
 .tanks img {
   vertical-align: middle; }
@@ -358,27 +367,59 @@ input, select {
   display: inline;
   padding-left: 15px; }
 
-.meleedps {
+.healer {
   position: absolute;
   left: 60%;
-  top: 200px;
+  top: 210px;
+  width: 310px;
+  height: 270px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  background-color: rgba(40, 148, 46, 0.7);
+  border-radius: 10px; }
+
+.healertext {
+  position: absolute;
+  left: 63%;
+  top: 180px;
   width: 230px;
-  height: 170px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold; }
+
+.healer li {
+  padding-top: 15px;
+  font-size: 21px;
+  padding-left: 7px; }
+
+.healer img {
+  vertical-align: middle; }
+
+.healer p {
+  vertical-align: middle;
+  display: inline;
+  padding-left: 15px; }
+
+.meleedps {
+  position: absolute;
+  left: 9%;
+  top: 540px;
+  width: 310px;
+  height: 300px;
   border: 2px solid rgba(0, 0, 0, 0.4);
   background-color: rgba(163, 51, 51, 0.7);
   border-radius: 10px; }
 
 .meleetext {
   position: absolute;
-  left: 60%;
+  left: 12%;
+  top: 510px;
   width: 230px;
-  top: 170px;
   text-align: center;
   font-size: 23px;
   font-weight: bold; }
 
 .meleedps li {
-  padding-top: 10px;
+  padding-top: 5px;
   font-size: 20px;
   padding-left: 7px; }
 
@@ -392,25 +433,25 @@ input, select {
 
 .rangeddps {
   position: absolute;
-  left: 12%;
-  top: 420px;
-  width: 230px;
-  height: 170px;
+  left: 39%;
+  top: 540px;
+  width: 310px;
+  height: 300px;
   border: 2px solid rgba(0, 0, 0, 0.4);
   background-color: rgba(163, 51, 51, 0.7);
   border-radius: 10px; }
 
 .rangedtext {
   position: absolute;
-  left: 11.3%;
+  left: 41.3%;
   width: 250px;
-  top: 390px;
+  top: 510px;
   text-align: center;
   font-size: 23px;
   font-weight: bold; }
 
 .rangeddps li {
-  padding-top: 30px;
+  padding-top: 25px;
   font-size: 20px;
   padding-left: 7px; }
 
@@ -424,25 +465,25 @@ input, select {
 
 .casterdps {
   position: absolute;
-  left: 42%;
-  top: 420px;
-  width: 230px;
-  height: 170px;
+  left: 69%;
+  top: 540px;
+  width: 310px;
+  height: 300px;
   border: 2px solid rgba(0, 0, 0, 0.4);
   background-color: rgba(163, 51, 51, 0.7);
   border-radius: 10px; }
 
 .castertext {
   position: absolute;
-  left: 42%;
+  left: 72%;
   width: 230px;
-  top: 390px;
+  top: 510px;
   text-align: center;
   font-size: 23px;
   font-weight: bold; }
 
 .casterdps li {
-  padding-top: 20px;
+  padding-top: 15px;
   font-size: 20px;
   padding-left: 7px; }
 
@@ -450,38 +491,6 @@ input, select {
   vertical-align: middle; }
 
 .casterdps p {
-  vertical-align: middle;
-  display: inline;
-  padding-left: 15px; }
-
-.healer {
-  position: absolute;
-  left: 72%;
-  top: 420px;
-  width: 230px;
-  height: 170px;
-  border: 2px solid rgba(0, 0, 0, 0.4);
-  background-color: rgba(42, 148, 48, 0.7);
-  border-radius: 10px; }
-
-.healertext {
-  position: absolute;
-  left: 72%;
-  width: 230px;
-  top: 390px;
-  text-align: center;
-  font-size: 23px;
-  font-weight: bold; }
-
-.healer li {
-  padding-top: 20px;
-  font-size: 20px;
-  padding-left: 7px; }
-
-.healer img {
-  vertical-align: middle; }
-
-.healer p {
   vertical-align: middle;
   display: inline;
   padding-left: 15px; }
@@ -537,7 +546,7 @@ img {
 .jobname {
   font-size: 60px;
   margin-top: 30px;
-  margin-left: 5vw;
+  margin-left: 9vw;
   border-bottom: 1px solid black;
   width: 80vw;
   max-width: 1200px; }
@@ -551,7 +560,7 @@ img {
 .lore {
   font-size: 20px;
   margin-top: 40px;
-  margin-left: 5vw;
+  margin-left: 9vw;
   margin-right: 15vw;
   max-width: 1050px; }
 
@@ -625,6 +634,7 @@ img {
   height: 30px;
   z-index: 1;
   position: fixed;
+  padding-right: 10px;
   top: 20px; }
 
 .nav1 a {
@@ -634,11 +644,6 @@ img {
 .nav2 a {
   text-decoration: none;
   color: white; }
-
-.jobdesc {
-  position: fixed;
-  bottom: 22px;
-  right: 0px; }
 
 .feedback {
   position: fixed;
@@ -658,9 +663,9 @@ button {
   background-color: lightgray;
   background-size: cover;
   height: 105vh;
-  width: 83vw;
+  width: 85vw;
   bottom: -5px;
-  left: 4vw;
+  left: 7vw;
   opacity: 0.33;
   z-index: -1;
   border: 2px solid red; }

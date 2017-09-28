@@ -26,6 +26,7 @@
     height: 30px;
     z-index: 1;
     position:fixed;
+    padding-right:10px;
     top: 20px;
 
 }
@@ -36,12 +37,6 @@
 .nav2 a{
     text-decoration: none;
     color:white;
-}
-.jobdesc{
-    // visibility: hidden;
-    position: fixed;
-    bottom: 22px;
-    right:0px;
 }
 .feedback{
     // visibility: hidden;
@@ -63,9 +58,9 @@ button{
     background-color: lightgray;
     background-size: cover;
     height: 105vh;
-    width: 83vw;
+    width: 85vw;
     bottom:-5px;
-    left:4vw;
+    left:7vw;
     opacity:0.33;
     z-index: -1;
     border:2px solid red;

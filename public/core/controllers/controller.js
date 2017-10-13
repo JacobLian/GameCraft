@@ -4,6 +4,7 @@ $scope.sendData = function(jobs){
     console.log(jobs)
     jobSvc.postJobs(jobs).then(function(response){
         console.log(response)
+        $scope.actions = response.data
     })
     // jobSvc.postJobs(jobs).then(function(res) {
     //     // $scope.response = response.push("Thank you for your input!");
@@ -19,13 +20,13 @@ $scope.sendFeedback = function(feedback){
 }
 
 
-$scope.getActions = function(){
-    jobSvc.getActions().then(function(response){
-        console.log(response);
-        $scope.actions = response.data
-    })
-}
-$scope.getActions();
+// $scope.getActions = function(){
+//     jobSvc.getActions().then(function(response){
+//         console.log(response);
+//         $scope.actions = response.data
+//     })
+// }
+// $scope.getActions();
 
 
 $scope.getJobs = function(){

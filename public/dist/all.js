@@ -78,6 +78,7 @@ angular.module("game").controller('jobCtrl', function ($scope, jobSvc) {
         console.log(jobs);
         jobSvc.postJobs(jobs).then(function (response) {
             console.log(response);
+            $scope.actions = response.data;
         });
         // jobSvc.postJobs(jobs).then(function(res) {
         //     // $scope.response = response.push("Thank you for your input!");
@@ -92,13 +93,14 @@ angular.module("game").controller('jobCtrl', function ($scope, jobSvc) {
         });
     };
 
-    $scope.getActions = function () {
-        jobSvc.getActions().then(function (response) {
-            console.log(response);
-            $scope.actions = response.data;
-        });
-    };
-    $scope.getActions();
+    // $scope.getActions = function(){
+    //     jobSvc.getActions().then(function(response){
+    //         console.log(response);
+    //         $scope.actions = response.data
+    //     })
+    // }
+    // $scope.getActions();
+
 
     $scope.getJobs = function () {
         jobSvc.getJobs().then(function (response) {
@@ -143,9 +145,9 @@ angular.module("game").service('jobSvc', function ($http) {
     this.getJobs = function () {
         return $http.get(' http://www.garlandtools.org/db/data/action/97.json');
     };
-    this.getActions = function () {
-        return $http.get('https://api.xivdb.com/action');
-    };
+    // this.getActions = function(){
+    //     return $http.get('https://api.xivdb.com/action')
+    // }
 
     this.postJobs = function (job) {
         return $http({

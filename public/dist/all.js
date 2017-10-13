@@ -74,17 +74,31 @@ function hideFeed() {
 
 angular.module("game").controller('jobCtrl', function ($scope, jobSvc) {
 
+    $scope.getActions = function () {
+        jobSvc.getActions().then(function (response) {
+            console.log(response);
+            $scope.actions = response.data.help;
+        });
+    };
+    $scope.getActions();
+
+    $scope.getJobs = function () {
+        jobSvc.getJobs().then(function (response) {
+            console.log(response);
+            $scope.jobs = response.data.action.en.description;
+        });
+    };
+    $scope.getJobs();
+
     $scope.sendData = function (jobs) {
         console.log(jobs);
         jobSvc.postJobs(jobs).then(function (response) {
             console.log(response);
-            $scope.actions = response.data;
         });
-        // jobSvc.postJobs(jobs).then(function(res) {
-        //     // $scope.response = response.push("Thank you for your input!");
-        //     console.log(res)
-
-        // })
+        jobSvc.postJobs(jobs).then(function (res) {
+            // $scope.response = response.push("Thank you for your input!");
+            console.log(res);
+        });
     };
 
     $scope.sendFeedback = function (feedback) {
@@ -92,23 +106,6 @@ angular.module("game").controller('jobCtrl', function ($scope, jobSvc) {
             console.log(res);
         });
     };
-
-    // $scope.getActions = function(){
-    //     jobSvc.getActions().then(function(response){
-    //         console.log(response);
-    //         $scope.actions = response.data
-    //     })
-    // }
-    // $scope.getActions();
-
-
-    $scope.getJobs = function () {
-        jobSvc.getJobs().then(function (response) {
-            console.log(response);
-            $scope.jobs = response.data;
-        });
-    };
-    $scope.getJobs();
 });
 
 // $scope.jobName = "";
@@ -143,11 +140,11 @@ angular.module("game").controller('jobCtrl', function ($scope, jobSvc) {
 angular.module("game").service('jobSvc', function ($http) {
 
     this.getJobs = function () {
-        return $http.get(' http://www.garlandtools.org/db/data/action/97.json');
+        return $http.get(' http://www.garlandtools.org/db/data/action/3540.json');
     };
-    // this.getActions = function(){
-    //     return $http.get('https://api.xivdb.com/action')
-    // }
+    this.getActions = function () {
+        return $http.get('https://api.xivdb.com/action/');
+    };
 
     this.postJobs = function (job) {
         return $http({

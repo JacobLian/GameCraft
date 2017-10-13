@@ -1,41 +1,45 @@
 angular.module("game").controller('jobCtrl', function($scope, jobSvc){
 
-$scope.sendData = function(jobs){
-    console.log(jobs)
-    jobSvc.postJobs(jobs).then(function(response){
-        console.log(response)
-        $scope.actions = response.data
-    })
-    // jobSvc.postJobs(jobs).then(function(res) {
-    //     // $scope.response = response.push("Thank you for your input!");
-    //     console.log(res)
-        
-    // })
-}
-
-$scope.sendFeedback = function(feedback){
-    jobSvc.postFeedback(feedback).then(function(res){
-        console.log(res)
-    })
-}
+    $scope.getActions = function(){
+        jobSvc.getActions().then(function(response){
+            console.log(response);
+            $scope.actions = response.data.help
+        })
+    }
+    $scope.getActions();
 
 
-// $scope.getActions = function(){
-//     jobSvc.getActions().then(function(response){
-//         console.log(response);
-//         $scope.actions = response.data
-//     })
-// }
-// $scope.getActions();
+    $scope.getJobs = function(){
+        jobSvc.getJobs().then(function(response){
+        console.log(response);
+        $scope.jobs = response.data.action.en.description;
+        })
+    }
+    $scope.getJobs();
 
 
-$scope.getJobs = function(){
-    jobSvc.getJobs().then(function(response){
-     console.log(response);
-     $scope.jobs = response.data;
-    })
-}
-$scope.getJobs();
+
+    $scope.sendData = function(jobs){
+        console.log(jobs)
+        jobSvc.postJobs(jobs).then(function(response){
+            console.log(response)
+        })
+        jobSvc.postJobs(jobs).then(function(res) {
+            // $scope.response = response.push("Thank you for your input!");
+            console.log(res)
+            
+        })
+    }
+    
+    
+    $scope.sendFeedback = function(feedback){
+        jobSvc.postFeedback(feedback).then(function(res){
+            console.log(res)
+        })
+    }
+
+
+
 
 })
 

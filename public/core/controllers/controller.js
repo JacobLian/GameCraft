@@ -1,5 +1,7 @@
 angular.module("game").controller('jobCtrl', function($scope, jobSvc){
 
+    $scope.jobinfo = jobSvc.getInfo()
+
     $scope.getActions = function(){
         jobSvc.getActions().then(function(response){
             console.log(response);

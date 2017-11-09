@@ -39,9 +39,14 @@ angular.module("game").service('jobSvc', function($http){
    var jobinfo = [
        {
            'job':'Paladin',
+
            'lore':'“For centuries, the elite of the Sultansworn have served as personal bodyguards to the royal family of Ul\'dah. Known as paladins, these men and women marry exquisite swordplay with stalwart shieldwork to create a style of combat uncompromising in its defense. Clad in brilliant silver armor, they charge fearlessly into battle, ever ready to lay down their lives for their liege. To be a paladin is to protect, and those who choose to walk this path will become the iron foundation upon which the party\'s defense is built.” ~Game Description',
+
            'info':'Paladin is your sword and board of Final Fantasy while wielding holy magic to enhance it\'s abilities. The Paladin\'s uses heavy armor and focuses on the Vitality attribute.',
            'gameplay':'The Paladin is your end all be all main tank. Paladin utilizes healing magic and damage mitigation to provide a solid frontline. Paladin is the only job wielding a shield that with abilities can reliably protect you from damage. Paladin has many party mitigation tools such as Passage of Arms and Cover to protect it\'s allies. Paladin uses the oath gauge to perform some of it\'s abilities.',
+
+           'gameplay':'',
+           
            'stats':'Paladins are the most often main tank in FFXIV currently. Currently the accepted stat priority is Direct hit > critical hit > determination > skill speed > and lastly tenacity',
        },
        {

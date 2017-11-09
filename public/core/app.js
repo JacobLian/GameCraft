@@ -16,6 +16,10 @@ angular.module("game", ['ui.router'])
         url: '/stats',
         templateUrl:'../core/views/stats.html'
     })
+    .state('blah', {
+        url: '/ffjobs/blah',
+        templateUrl:'../core/views/blah.html'
+    })
     .state('paladin', {
         url: '/ffjobs/paladin',
         templateUrl:'../core/views/jobpages/paladin.html'

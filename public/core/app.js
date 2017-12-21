@@ -22,7 +22,7 @@ angular.module("game", ['ui.router'])
     })
     .state('paladin', {
         url: '/ffjobs/paladin',
-        templateUrl:'../core/views/jobpages/paladin.html'
+        templateUrl:'../core/views/blah.html'
     })
     .state('warrior', {
         url: '/ffjobs/warrior',

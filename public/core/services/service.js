@@ -32,10 +32,12 @@ angular.module("game").service('jobSvc', function($http){
        })
    }
 
-   this.getInfo = function(){
-       return jobinfo
+   this.getInfo = function(job){
+       return jobinfo[job];
    }
-
+   this.info = function(){
+       return jobinfo;
+   }
    var jobinfo = [
        {
            'job':'Paladin',
@@ -46,7 +48,7 @@ angular.module("game").service('jobSvc', function($http){
            'gameplay':'The Paladin is your end all be all main tank. Paladin utilizes healing magic and damage mitigation to provide a solid frontline. Paladin is the only job wielding a shield that with abilities can reliably protect you from damage. Paladin has many party mitigation tools such as Passage of Arms and Cover to protect it\'s allies. Paladin uses the oath gauge to perform some of it\'s abilities.',
 
            'gameplay':'',
-           
+
            'stats':'Paladins are the most often main tank in FFXIV currently. Currently the accepted stat priority is Direct hit > critical hit > determination > skill speed > and lastly tenacity',
        },
        {

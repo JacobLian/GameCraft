@@ -326,173 +326,158 @@ input, select {
 
 .minidesc {
   font-size: 18px;
-  padding-left: 12px;
-  width: 290px;
-  padding-top: 5px;
-  padding-bottom: 5px; }
+  text-align: center;
+  padding-top: 3px; }
 
 .lengthen {
   position: absolute;
   top: 880px;
   visibility: hidden; }
 
-.tanks {
-  position: absolute;
-  width: 295px;
-  top: 210px;
-  left: 18%;
-  height: 270px;
-  border: 2px solid rgba(0, 0, 0, 0.5);
-  background-color: rgba(47, 61, 123, 0.6);
-  border-radius: 10px; }
+.jobrow1 {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around; }
 
-.tanktext {
-  position: absolute;
-  left: 20%;
-  width: 230px;
-  top: 180px;
+.jobrow2 {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around; }
+
+.test1 {
+  margin-top: 3px;
   text-align: center;
-  font-size: 23px;
-  font-weight: bold; }
+  font-size: 23px; }
+
+.tanks {
+  width: 295px;
+  height: 280px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  background-color: rgba(72, 39, 197, 0.7);
+  border-radius: 10px;
+  margin-bottom: 10px; }
 
 .tanks li {
   padding-top: 15px;
   padding-left: 7px;
-  font-size: 21px; }
+  font-size: 21px;
+  vertical-align: middle; }
+
+.tanks p {
+  display: inline;
+  padding-left: 15px; }
 
 .tanks img {
   vertical-align: middle; }
 
-.tanks p {
-  vertical-align: middle;
-  display: inline;
-  padding-left: 15px; }
-
 .healer {
-  position: absolute;
-  right: 18%;
-  top: 210px;
   width: 295px;
-  height: 270px;
+  height: 280px;
   border: 2px solid rgba(0, 0, 0, 0.4);
   background-color: rgba(40, 148, 46, 0.7);
   border-radius: 10px; }
 
-.healertext {
-  position: absolute;
-  right: 20%;
-  top: 180px;
-  width: 230px;
-  text-align: center;
-  font-size: 23px;
-  font-weight: bold; }
-
 .healer li {
   padding-top: 15px;
   font-size: 21px;
-  padding-left: 7px; }
+  padding-left: 7px;
+  vertical-align: middle; }
 
 .healer img {
   vertical-align: middle; }
 
 .healer p {
-  vertical-align: middle;
   display: inline;
   padding-left: 15px; }
 
 .meleedps {
-  position: absolute;
-  left: 6%;
-  top: 540px;
   width: 295px;
   height: 300px;
   border: 2px solid rgba(0, 0, 0, 0.4);
   background-color: rgba(163, 51, 51, 0.7);
-  border-radius: 10px; }
-
-.meleetext {
-  position: absolute;
-  left: 9%;
-  top: 510px;
-  width: 230px;
-  text-align: center;
-  font-size: 23px;
-  font-weight: bold; }
+  border-radius: 10px;
+  margin-bottom: 10px; }
 
 .meleedps li {
-  padding-top: 5px;
+  padding-top: 7px;
   font-size: 20px;
-  padding-left: 7px; }
+  padding-left: 7px;
+  vertical-align: middle; }
 
 .meleedps img {
   vertical-align: middle; }
 
 .meleedps p {
-  vertical-align: middle;
   display: inline;
   padding-left: 15px; }
 
 .rangeddps {
-  position: absolute;
-  left: 39%;
-  top: 540px;
   width: 295px;
   height: 300px;
   border: 2px solid rgba(0, 0, 0, 0.4);
   background-color: rgba(163, 51, 51, 0.7);
-  border-radius: 10px; }
-
-.rangedtext {
-  position: absolute;
-  left: 41%;
-  top: 510px;
-  width: 250px;
-  text-align: center;
-  font-size: 23px;
-  font-weight: bold; }
+  border-radius: 10px;
+  margin-bottom: 10px; }
 
 .rangeddps li {
   padding-top: 25px;
   font-size: 20px;
-  padding-left: 7px; }
+  padding-left: 7px;
+  vertical-align: middle; }
 
 .rangeddps img {
   vertical-align: middle; }
 
 .rangeddps p {
-  vertical-align: middle;
   display: inline;
   padding-left: 15px; }
 
 .casterdps {
-  position: absolute;
-  right: 6%;
-  top: 540px;
   width: 295px;
   height: 300px;
   border: 2px solid rgba(0, 0, 0, 0.4);
   background-color: rgba(163, 51, 51, 0.7);
-  border-radius: 10px; }
-
-.castertext {
-  position: absolute;
-  right: 9%;
-  width: 230px;
-  top: 510px;
-  text-align: center;
-  font-size: 23px;
-  font-weight: bold; }
+  border-radius: 10px;
+  margin-bottom: 10px; }
 
 .casterdps li {
   padding-top: 15px;
   font-size: 20px;
-  padding-left: 7px; }
+  padding-left: 7px;
+  vertical-align: middle; }
 
 .casterdps img {
   vertical-align: middle; }
 
 .casterdps p {
-  vertical-align: middle;
   display: inline;
   padding-left: 15px; }
 

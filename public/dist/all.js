@@ -17,7 +17,7 @@ angular.module("game", ['ui.router']).config(function ($stateProvider, $urlRoute
         templateUrl: '../core/views/blah.html'
     }).state('paladin', {
         url: '/ffjobs/paladin',
-        templateUrl: '../core/views/jobpages/paladin.html'
+        templateUrl: '../core/views/blah.html'
     }).state('warrior', {
         url: '/ffjobs/warrior',
         templateUrl: '../core/views/jobpages/warrior.html'
@@ -77,7 +77,13 @@ function hideFeed() {
 
 angular.module("game").controller('jobCtrl', function ($scope, jobSvc) {
 
-    $scope.jobinfo = jobSvc.getInfo();
+    $scope.info = jobSvc.info();
+
+    $scope.jobinfo = function (job) {
+        jobSvc.getInfo(job).then(function (response) {
+            console.log(response);
+        });
+    };
 
     $scope.getActions = function () {
         jobSvc.getActions().then(function (response) {
@@ -133,7 +139,6 @@ angular.module("game").controller('jobCtrl', function ($scope, jobSvc) {
 
 // }
 "use strict";
-"use strict";
 // window.ready()
 //     var btn = document.querySelector('.button');
 //     btn.on('click', function(e){
@@ -176,10 +181,12 @@ angular.module("game").service('jobSvc', function ($http) {
                         });
             };
 
-            this.getInfo = function () {
+            this.getInfo = function (job) {
+                        return jobinfo[job];
+            };
+            this.info = function () {
                         return jobinfo;
             };
-
             var jobinfo = [(_ref = {
                         'job': 'Paladin',
 
